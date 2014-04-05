@@ -75,7 +75,7 @@ $('.hide3').click(function() {
                  <li><a href="aboutme.html">About Me </a></li>        
                  <li><a href="project.html">Project</a></li>
                  <li><a href="service.html">Service</a></li>
-                 <li><a href="https://github.com/Khilan/Khilan" target="_blank">GitHub</a></li>
+                 <li><a href="https://github.com/Khilan/Business" target="_blank">GitHub</a></li>
                  <li><a href="contactme.html">Contact Me</a></li>
                  <li><a href="businesscontact.php" class="businesscontact">Business Contact</a></li>
               </ul>
