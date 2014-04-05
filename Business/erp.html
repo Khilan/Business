@@ -1,0 +1,154 @@
+<!-- Author: Khilan -->
+<!-- File: erp.html -->
+<!-- ERP Page-->
+<!-- HTML File-->
+<html>
+<head>
+<!-- Title of the Website -->
+<title> ERP </title>
+<!-- Link to CSS and javascript reference -->
+<link rel="stylesheet" type="text/css" href="css/erp.css"/>
+<link rel="stylesheet" type="text/css" href="css/slideerp.css"/>
+<link rel="shortcut icon" type="image/png" href="kp.png">
+<script type="text/javascript" src="slide.js">
+</script>
+</head>
+
+
+<!-- Body -->
+<body>
+<!-- Container -->
+<div id="Container">
+
+       <!-- Header -->
+		<div id="header">
+        
+             <div>
+             	<img align="left" src="image.png" name="pic"  id="pic"> <h1 id="Welcome">Welcome To My WebPage.</h1>
+             </div>
+     
+            <!-- Menu Navigation -->
+             <ul id="menu">
+                 <li><a href="home.html">Home</a></li>
+                 <li><a href="aboutme.html">About Me </a></li>        
+                 <li><a href="project.html" class="project">Project</a></li>
+                 <li><a href="service.html">Service</a></li>
+                 <li><a href="https://github.com/Khilan/Khilan" target="_blank">GitHub</a></li>
+                 <li><a href="contactme.html">Contact Me</a></li>
+                 <li><a href="businesscontact.php">Business Contact</a></li>
+             </ul> 
+        </div>
+        
+       <!-- Contain Area -->
+       <div id="contain-area">
+       
+                <!-- Title of the Project -->
+               <h1 id="erp1"> Enterprise Resource Planning </h1>
+               
+               <!-- Slider -->
+               <div id="slider">
+               
+                  <a href="#" class="control_next" >></a>
+                  <a href="#" class="control_prev"><</a>
+                  <!-- Project Pictures -->
+                  <ul>
+                    <li> <a href="cms.png" target="_blank"> <img src="erp.png" id="pic1"> </a></li>
+                    <li> <a href="cms1.png" target="_blank"> <img src="erp1.png" id="pic1"> </a></li>
+                    <li> <a href="cms2.png" target="_blank"> <img src="erp2.png" id="pic1"> </a></li>
+                    <li> <a href="cms3.png" target="_blank"> <img src="erp3.png" id="pic1"> </a> </li>
+                  </ul> 
+  			   </div>
+
+	  	       <!-- Project Description -->
+               <div id="erp-div">
+               	 <p id="perp">
+       
+                       An Enterprise Resource Planning (ERP) System for Store the information of the company, <br/>
+                       the main aim of this system is that Admin can easily store information of the different <br/>
+                       division like manufacturing management (MM),  Material management (MM), Point Of Sale (POS). <br/>
+                       And easily maintain this information edit, delete and update. This system is a powerful and <br/>
+                       easy-to-use tool for the Member to store the information on internet and use from any place<br/>
+                       through user name and  password. <br/>
+       
+                 </p> 
+               </div>
+
+			   <!-- Slider Option -->
+               <div class="slider_option">
+ 
+
+					<!-- Jquery for Slider-->
+					<script>
+                    
+                        jQuery(document).ready(function ($) {
+                    
+                        setInterval(function () {
+                            moveRight();
+                        }, 3000);
+                    
+                        var slideCount = $('#slider ul li').length;
+                        var slideWidth = $('#slider ul li').width();
+                        var slideHeight = $('#slider ul li').height();
+                        var sliderUlWidth = slideCount * slideWidth;
+                    
+                        $('#slider').css({ width: slideWidth, height: slideHeight });
+                    
+                        $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+                    
+                        $('#slider ul li:last-child').prependTo('#slider ul');
+                    
+                        function moveLeft() {
+                            $('#slider ul').animate({
+                                left: + slideWidth
+                            }, 1000, function () {
+                                $('#slider ul li:last-child').prependTo('#slider ul');
+                                $('#slider ul').css('left', '');
+                            });
+                        };
+                    
+                        function moveRight() {
+                            $('#slider ul').animate({
+                                left: - slideWidth
+                            }, 1000, function () {
+                                $('#slider ul li:first-child').appendTo('#slider ul');
+                                $('#slider ul').css('left', '');
+                            });
+                        };
+                    
+                        $('a.control_prev').click(function () {
+                            moveLeft();
+                        });
+                    
+                        $('a.control_next').click(function () {
+                            moveRight();
+                        });
+                    
+                    });
+                        
+              
+                    </script>
+                    
+                    <script>
+                    
+					    if (document.location.search.match(/type=embed/gi)) {
+                          window.parent.postMessage('resize', "*");
+                        }
+                       <!-- __bindToLinks(); -->
+     
+                    </script>
+                    
+                    </div> 
+    
+         </div>   
+
+        <!-- Footer -->
+        <div id="footer">
+        	 <p align="center"> Copyright &copy 2014;     My First Webpage  </p>
+        </div>
+
+
+</div>
+
+</body>
+
+</html>

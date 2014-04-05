@@ -1,0 +1,109 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);	
+<!-- Author: Khilan -->
+<!-- File: slide.css -->
+<!-- Home Page-->
+<!-- Website:- khilan.cuccfree.com/slidet.css -->
+<!-- CSS File-->
+
+
+/* Slider Property */
+#slider
+{
+	float: left;
+	margin-left: 60%;
+	margin-top: -90%;
+}
+
+/* h1 property */
+h1 
+{
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+}
+
+/* Property for entire Slider */
+#slider
+{
+	width: 40%;
+	height: 65%;
+	padding-top:4%;
+	position: relative;
+	overflow: hidden;
+	margin: 20px auto 0 auto;
+	border-radius: 4px;
+	margin-left: 54%;
+	margin-top: -97%;
+}
+
+
+#slider ul 
+{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li 
+{
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 471px; 
+  height: 415px;  
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+/* Next and previous Property for slider*/
+a.control_prev, a.control_next 
+{
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover 
+{
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev 
+{
+  border-radius: 0 2px 2px 0;
+  top:230;
+}
+
+a.control_next 
+{  
+  border-radius: 2px 0 0 2px;
+  padding-right: 27.088; 
+  right: 1;
+  top: 230;
+}
+
+/* Slider option property */
+.slider_option 
+{
+   position: relative;
+   margin: 8px auto;
+   width: 171px;
+   font-size: 18px;
+}

@@ -1,0 +1,188 @@
+<!-- Author: Khilan -->
+<!-- File: home.html -->
+<!-- Home Page-->
+<!-- HTML File-->
+<html>
+<head>
+<!-- Title of the Website -->
+<title> PortFolio </title>
+
+<!-- Link to CSS and javascript reference -->
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+<link rel="shortcut icon" type="image/png" href="kp.png">
+<link rel="stylesheet" type="text/css" href="css/slide.css"/>
+<script type="text/javascript" src="slide.js">
+</script>
+</head>
+
+<!-- Body -->
+<body background="image.jpg" id="backimage">
+
+<!-- Container -->        
+<div id="container">
+
+     <!-- Header -->
+	 <div id="header"><br>
+     <div>
+     <img align="left" src="image.png" name="pic"  id="pic"> <h1>Welcome To My WebPage.</h1>
+     </div>
+     
+     <div>
+      <!-- Menu Navigation -->
+         <ul id="menu">
+             <li><a href="home.html" class="home">Home</a></li>
+             <li><a href="aboutme.html">About Me </a></li>        
+             <li><a href="project.html">Project</a></li>
+             <li><a href="service.html">Service</a></li>
+             <li><a href="https://github.com/Khilan/Khilan" target="_blank">GitHub</a></li>
+             <li><a href="contactme.html">Contact Me</a></li>
+             <li><a href="businesscontact.php">Business Contact</a></li>
+         </ul>
+     </div>
+     </div>
+    
+    <!-- Contain Area -->
+    <div id="contain_area">
+         <div>
+         <aside>
+           <article id="right">
+           <p>
+               <!-- Tagline -->
+                <p id="mission">Tagline:-</p>
+                
+                An accomplished Software Engineer specializing in Analysis and Software development <br/>
+                with extensive analytical research in security of information and critical design processing <br/>
+                of software engineering according to organizational goals. <br/>
+                
+                <!-- Mission Statement-->
+                <p id="mission">Mission Statement:-</p>
+                
+                I was lucky to be involved and get to contribute to something that was important,  <br/>
+                which is empowering people with software.<br/>
+                Bill Gates <br/><br/>
+                
+                Software constraints are only confining if you use them for what they're intended  <br/>
+                to be used for. <br/>
+                David Byrne <br/><br/>
+                
+                Our technology is very scalable. Our software can accommodate enormous numbers<br/>
+                of clients. It's a marvelous opportunity. We'll keep developing products. <br/>
+                Jay Chiat <br/>  
+    	   </p>
+    
+   		 <hr id="line"> 
+    			<!-- Logo -->
+                <div id="logo">
+                    <h1 id="link">Keep Connected</h1> 
+                    <p>
+                         <a href="https://www.facebook.com/khilan9696" target="_blank"> <img src="image4.png" id="pic2" ></a> 
+                        <a href="https://twitter.com/Khilan16" target="_blank"> <img src="image6.png" id="pic3"></a> 
+                        <a href="https://plus.google.com/u/0/" target="_blank"> <img src="image5.png" id="pic4"></a> 
+                        </p> 
+                 </div>
+           </article>
+         </aside>
+         
+     <!-- Slider -->
+     <div id="slider">
+          <a href="#" class="control_next" >></a>
+          <a href="#" class="control_prev"><</a>
+          
+          <!-- Different Pictures for Slider-->
+          <ul>
+            <li> <a href="Project/Trading card/trading_card.html" target="_blank"> 
+            	<img src="a.png" id="pic1"> </a>
+            </li>
+            <li> <a href="Project/Modify trading/Change_Image.html" target="_blank"> 
+            	<img src="b.png" id="pic1"> </a>
+            </li>
+            <li> <a href="erp.html" target="_blank"> 
+            	<img src="erp.png" id="pic1"> </a>
+            </li>
+            <li> <a href="cms.html" target="_blank"> 
+            	<img src="cms.png" id="pic1"> </a> 
+            </li>
+          </ul>  
+     </div>
+     
+    <!-- Slider Option -->
+    <div class="slider_option">
+     
+         <!-- Jquery for Slider -->
+			<script>
+                   
+                jQuery(document).ready(function ($) {
+            
+                setInterval(function ()
+				{
+                    moveRight();
+                }, 3000);
+            
+                var slideCount = $('#slider ul li').length;
+                var slideWidth = $('#slider ul li').width();
+                var slideHeight = $('#slider ul li').height();
+                var sliderUlWidth = slideCount * slideWidth;
+            
+                $('#slider').css({ width: slideWidth, height: slideHeight });
+            
+                $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+            
+                $('#slider ul li:last-child').prependTo('#slider ul');
+            
+                function moveLeft()
+				{
+                    $('#slider ul').animate({
+                        left: + slideWidth
+                    }, 1000, function () {
+                        $('#slider ul li:last-child').prependTo('#slider ul');
+                        $('#slider ul').css('left', '');
+                    });
+                };
+            
+                function moveRight() 
+				{
+                    $('#slider ul').animate({
+                        left: - slideWidth
+                    }, 1000, function () {
+                        $('#slider ul li:first-child').appendTo('#slider ul');
+                        $('#slider ul').css('left', '');
+                    });
+                };
+            
+                $('a.control_prev').click(function () 
+				{
+                    moveLeft();
+                });
+            
+                $('a.control_next').click(function () 
+				{
+                    moveRight();
+                });
+            
+            });
+                //@ sourceURL=pen.js
+            </script>
+            
+            <script>
+            
+               
+                if (document.location.search.match(/type=embed/gi)) {
+                  window.parent.postMessage('resize', "*");
+                }
+               <!-- __bindToLinks(); -->
+            </script>
+    
+    	 </div> 
+      </div>   
+    </div> 
+    
+    <!-- Footer -->
+    <div id="footer">
+    	<p align="center" id="copy"> Copyright &copy 2014;     All rights reserved  </p>
+    </div>
+
+</div>
+
+</body>
+
+</html>
